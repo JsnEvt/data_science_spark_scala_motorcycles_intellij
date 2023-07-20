@@ -1,0 +1,30 @@
+# Arquivos do IntelliJ IDEA
+.idea/
+
+# Logs
+*.log
+
+# Arquivos temporários e de compilação do Scala
+/target/
+/project/target/
+*.iml
+*.ipr
+*.iws
+*.class
+
+# Arquivos de dependências gerados pelo SBT (Scala Build Tool)
+/lib_managed/
+/target/
+
+# Arquivos de histórico de sessão do Scala REPL (Read-Eval-Print Loop)
+.history
+
+# Arquivos de configuração local do sbt
+.sbt/
+
+# Arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Project exclude paths
+/project/project/target/
