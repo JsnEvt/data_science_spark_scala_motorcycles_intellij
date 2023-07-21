@@ -12,7 +12,7 @@ object FirstOwnerYamahaPowerBikes extends App {
   val sourceBikesRDD = sparkContext.textFile("src/main/resources/Used_Bikes.csv")
 
   //3. To apply the use case logics
-  val splittedRDD = sourceBikesRDD.map(line => line.split(",").map(column => column.trim))
+  val splittedRDD = sourceBikesRDD.map(line => line.split(",").map(column => column.trim()))
 
   val resultRDD = splittedRDD.filter(bike => bike(4).equalsIgnoreCase("First Owner")
     && bike(6).toDouble > 150 && bike(7).equalsIgnoreCase("Yamaha"))
