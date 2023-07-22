@@ -30,5 +30,7 @@ object WordCount {
     //Printing the final RDD
     finalCountWordsRDD.foreach(println)
 
+    scala.io.StdIn.readLine()
+
   }
 }
